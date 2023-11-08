@@ -1,0 +1,4 @@
+{
+    "docify.commentService.autoAccept": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
