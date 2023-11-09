@@ -50,3 +50,16 @@ function starQuiz() {
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+function showQuestion() {
+    let currentQuestionIndex = question[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.
+        question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButton.appendChild(button);
+    });
+}
